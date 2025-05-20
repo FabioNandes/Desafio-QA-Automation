@@ -61,12 +61,30 @@ npx cypres run
 
 ## 📁 Estrutura do Projeto
 Desafio-QA-Automation/
+.
 ├── cypress/
-│ ├── e2e/          #Arquivos de teste separados em duas pastas uma para UI e outra para API
-│ ├── fixtures/     # Imagem para a realização do teste de upload no cadastro de produto
-│ ├── support/      # Comandos customizados e setup
-├── cypress.config.js      # Configuração principal do Cypress
-├── package.json        # Dependências e scripts
+│   ├── downloads/
+│   ├── e2e/        #Testes separados em API e testes de UI
+│   │   ├── api/
+│   │   │   ├── cadastraProduto.cy.js
+│   │   │   └── listaProdutos.cy.js
+│   │   └── gui/
+│   │       ├── cadastroProduto.cy.js
+│   │       ├── cadastroUsuario.cy.js
+│   │       ├── listaDeProdutos.cy.js
+│   │       └── login.cy.js
+│   ├── fixtures/
+│   ├── support/    #Comandos personalizados para a API e UI
+│   │   ├── api_commands.js
+│   │   ├── e2e.js
+│   │   └── gui_commands.js
+├── docs/
+├── node_modules/
+├── .gitignore
+├── cypress.config.js
+├── package-lock.json 
+├── package.json    #Dependências
+└── README.md
 
 
 
