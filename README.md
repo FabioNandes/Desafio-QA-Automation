@@ -27,16 +27,23 @@ Antes de começar, certifique-se de ter instalado:
 
 1. **Clone o repositório:**
 
-   ```bash
-   git clone https://github.com/FabioNandes/Desafio-QA-Automation.git
-   cd Desafio-QA-Automation
-
+```bash
+git clone https://github.com/FabioNandes/Desafio-QA-Automation.git
+cd Desafio-QA-Automation
+```
 
 2. Instale as dependências do projeto:
 
 ```bash
 npm install
 ```
+
+#### :diamond_shape_with_a_dot_inside: Extensões recomendadas para o VS Code
+- [VS Code](https://code.visualstudio.com/download) 
+    - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) 
+    - [Add Only](https://marketplace.visualstudio.com/items?itemName=ub1que.add-only) 
+    - [Mocha snippets](https://marketplace.visualstudio.com/items?itemName=spoonscen.es6-mocha-snippets)
+
 ## 🧪 Executando os Testes
 
 ### 🔵 Modo Interativo (com interface gráfica)
@@ -89,9 +96,5 @@ Desafio-QA-Automation/
 ```
 
 
-#### :diamond_shape_with_a_dot_inside: Extensões recomendadas para o VS Code
-- [VS Code](https://code.visualstudio.com/download) 
-    - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) 
-    - [Add Only](https://marketplace.visualstudio.com/items?itemName=ub1que.add-only) 
-    - [Mocha snippets](https://marketplace.visualstudio.com/items?itemName=spoonscen.es6-mocha-snippets)
+
 
