@@ -19,3 +19,11 @@ Cypress.Commands.add('gui_cadastroAdministrador', user => {
 })
 
 
+Cypress.Commands.add('gui_login', user => {
+    cy.visit( `${Cypress.config('baseUrl')}/login`)
+    
+    cy.get('[data-testid="email"]').type(user.email)
+    cy.get('[data-testid="senha"]').type(user.password)
+    cy.get('[data-testid="entrar"]').click()
+})
+
