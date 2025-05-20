@@ -18,7 +18,6 @@ Cypress.Commands.add('gui_cadastroAdministrador', user => {
     cy.get('[data-testid="cadastrar"]').click()
 })
 
-
 Cypress.Commands.add('gui_login', user => {
     cy.visit( `${Cypress.config('baseUrl')}/login`)
     
@@ -27,3 +26,14 @@ Cypress.Commands.add('gui_login', user => {
     cy.get('[data-testid="entrar"]').click()
 })
 
+Cypress.Commands.add('gui_adicionarNaLista', () => {
+    cy.url().should('be.equal', `${Cypress.config('baseUrl')}/home`)
+    cy.get('[data-testid="lista-de-compras"]').should('be.visible')
+    cy.get(':nth-child(3) > .card-body > div > [href="/minhaListaDeProdutos"] > [data-testid="adicionarNaLista"]').click()
+})
+
+
+
+
+
+    
