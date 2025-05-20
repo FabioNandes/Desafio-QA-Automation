@@ -61,6 +61,7 @@ npx cypres run
 
 ## 📁 Estrutura do Projeto
 Desafio-QA-Automation/
+```
 .
 ├── cypress/
 │   ├── downloads/
@@ -85,7 +86,7 @@ Desafio-QA-Automation/
 ├── package-lock.json 
 ├── package.json    #Dependências
 └── README.md
-
+```
 
 
 #### :diamond_shape_with_a_dot_inside: Extensões recomendadas para o VS Code
