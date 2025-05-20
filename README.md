@@ -5,15 +5,12 @@ Repositório de automação de testes utilizando Cypress para o desafio de QA.
 
 ---
 
-> **application under test:** Site Serverest 
->
+**application under test:** Site Serverest 
+
 > ## :goal_net: Goals
 - Automação de 5 cenários de teste criados durante a realização do test plan anexado na pasta "docs"   
 - Aplicação da arquitetura de testes Page Object Model
 - Automação para os endpoints de listagem de produtos e cadastro de produtos para a api indicada no test plan
-
-- ## :gear: Setup
-
 
 ## 🚀 Como Executar os Testes Automatizados
 
@@ -39,7 +36,7 @@ Antes de começar, certifique-se de ter instalado:
 
 ```bash
 npm install
-
+```
 ## 🧪 Executando os Testes
 
 ### 🔵 Modo Interativo (com interface gráfica)
@@ -48,7 +45,7 @@ Para abrir o Cypress Test Runner:
 
 ```bash
 npx cypress open
-
+```
 - A interface será aberta.
 - Escolha um dos arquivos de teste para executar
 
@@ -57,7 +54,7 @@ Para executar todos os testes diretamente no terminal
 
 ```bash
 npx cypres run
-
+```
 - Os testes serão executados em modo headless
 - Resultados aparecem no terminal 
 
