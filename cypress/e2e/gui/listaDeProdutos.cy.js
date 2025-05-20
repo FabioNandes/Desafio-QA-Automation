@@ -1,6 +1,6 @@
 import { faker } from '@faker-js/faker'
 
-describe('Adição de produto à lista', () => {
+describe('Adição de produto à lista pelo usuário', () => {
  
     const user = {
         name: faker.person.fullName(),

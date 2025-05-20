@@ -10,6 +10,6 @@ module.exports = defineConfig({
       snapshotOnly: true
     }
   },
-  fixturesFolder: false,
+  fixturesFolder: 'cypress/fixtures',
   video: false,
 })

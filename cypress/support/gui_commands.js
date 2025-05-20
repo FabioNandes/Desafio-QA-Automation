@@ -32,7 +32,17 @@ Cypress.Commands.add('gui_adicionarNaLista', () => {
     cy.get(':nth-child(3) > .card-body > div > [href="/minhaListaDeProdutos"] > [data-testid="adicionarNaLista"]').click()
 })
 
-
+Cypress.Commands.add('gui_cadastraProduto', product => {
+    
+    cy.get('[data-testid="cadastrarProdutos"]').click()
+    cy.url().should('be.equal', `${Cypress.config('baseUrl')}/admin/cadastrarprodutos`)
+    cy.get('[data-testid="nome"]').type(product.name)
+    cy.get('[data-testid="preco"]').type(product.price)
+    cy.get('[data-testid="descricao"]').type(product.description)
+    cy.get('[data-testid="quantity"]').type(product.quantity)
+    cy.get('[data-testid="imagem"]').attachFile(product.file)
+    cy.get('[data-testid="cadastarProdutos"]').click()
+})
 
 
 
